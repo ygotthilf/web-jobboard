@@ -1,0 +1,8 @@
+node_modules
+public
+.tmp
+.grunt
+.idea
+client/bower_components
+dist
+/server/config/environment/local.js
