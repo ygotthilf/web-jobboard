@@ -102,8 +102,9 @@ module.exports = function (grunt) {
       scripts : {
 
         options : {
+          banner : '\'use strict\';\n\n',
           process : function (src, filepath){
-            return '/* '+filepath+' */\n(function(){\n\'use strict\';\n\n'+src+'\n\n})();';
+            return '/* '+filepath+' */\n(function(){\n\n'+src+'\n\n})();';
           }
         },
         src: [
