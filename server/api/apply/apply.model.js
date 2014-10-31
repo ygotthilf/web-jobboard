@@ -4,6 +4,7 @@ var mongoose = require('mongoose');
 var Job = require('../job/job.model');
 
 var ApplySchema = new mongoose.Schema ({
+    name : { type : String , required : true },
     email : { type : String , required : true, lowercase: true},
     message : String,
     job: { type : mongoose.Schema.ObjectId , ref : 'Job', required : true }

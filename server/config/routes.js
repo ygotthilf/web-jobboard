@@ -12,7 +12,14 @@ var config = require('./environment');
 module.exports = function (app){
 
   app.use(morgan('dev'));
+
+  if(config.env === 'development'){
+    app.use(require('connect-livereload')());
+    app.use(express.static(path.join(__dirname, '..', '..', '.tmp')));
+  }
+
   app.use(express.static(config.static));
+
   app.use(bodyParser.urlencoded({ extended :false }));
   app.use(bodyParser.json());
   app.use(methodOverride());
@@ -32,8 +39,9 @@ module.exports = function (app){
   app.use('/api/jobs', require('../api/job'));
   app.use('/api/applies', require('../api/apply'));
 
-  app.get('*', function (req, res){
-    res.status(404).json('Not found');
+
+  app.get('/*', function (req, res){
+    res.sendfile(config.static + '/index.html');
   });
 }
 

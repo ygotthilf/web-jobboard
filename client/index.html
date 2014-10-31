@@ -1,27 +1,56 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <base href="/">
-    <title></title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <base href="/">
+  <title></title>
 
-    <!-- build:css(.tmp) app/app.css -->
-      <link rel="stylesheet" href="app/app.css">
-    <!-- endbuild -->
-  </head>
-  <body>
+  <!-- build:css(.tmp) app/app.css -->
+  <link rel="stylesheet" href="app/app.css">
+  <!-- endbuild -->
+</head>
+<body ng-app="app">
 
-    <!-- CONTENT HERE -->
+  <header>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Freelance Jobboard</a>
+        </div>
 
-    <!-- build:js(client) app/vendor.js -->
-      <script src="bower_components/angular/angular.js"></script>
-      <script src="bower_components/angular-resource/angular-resource.js"></script>
-      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <!-- endbuild -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Jobs</a></li>
+            <li><a href="#">Apply</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
-    <!-- build:js(.tmp) app/app.js -->
-      <script src="app/combined-scripts.js"></script>
-    <!-- endbuild -->
-  </body>
+  </header>
+
+
+  <!-- CONTENT HERE -->
+  <div ng-view class="container-fluid"><h1 class="header text-center">Loading...</h1></div>
+
+  <!-- build:js(client) app/vendor.js -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js(.tmp) app/app.js -->
+  <script src="app/combined-scripts.js"></script>
+  <!-- endbuild -->
+</body>
 </html>

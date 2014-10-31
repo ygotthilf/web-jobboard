@@ -12,6 +12,8 @@ var app = express();
 
 require('./config/routes')(app);
 
-http.createServer (app).listen (config.port);
+app.listen (config.port);
 
 console.log("Server is running");
+
+module.exports = app;

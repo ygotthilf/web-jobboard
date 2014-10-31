@@ -1,0 +1,56 @@
+<div class="container">
+
+  <div class="job-header">
+    <h1 ng-bind="job.title"></h1>
+    <small>Publish by {{job.publisher}}, the {{job.created | date:'MM/yy'}} </small>
+  </div>
+
+  <h4 class="job-section">Informations</h4>
+
+  <dl class="dl-horizontal job-infos">
+    <dt>Salary</dt>
+    <dd>{{job.price}}</dd>
+
+    <dt>Duration</dt>
+    <dd>{{job.duration}}</dd>
+
+    <dt>Start</dt>
+    <dd>{{job.start}}</dd>
+  </dl>
+
+  <h4 class="job-section">Description</h4>
+  <pre class="description" ng-bind="job.description"></pre>
+
+  <h4 class="job-section">Apply</h4>
+
+  <form role="form" ng-submit="submitApply()" name="applyForm">
+    <div class="form-group" ng-class="{ 'has-error' : applyForm.name.$dirty && applyForm.name.$invalid , 'has-success' : applyForm.name.$dirty && applyForm.name.$valid }">
+      <label class="full-width">
+        Name
+        <small class="form-error" ng-show="applyForm.name.$dirty && applyForm.name.$invalid">Invalid email</small>
+        <input type="text" class="form-control" name="name" ng-model="apply.name" required>
+      </label>
+    </div>
+
+    <div class="form-group" ng-class="{ 'has-error' : applyForm.email.$dirty && applyForm.email.$invalid , 'has-success' : applyForm.email.$dirty && applyForm.email.$valid }">
+      <label class="full-width">
+        Email
+        <small class="form-error" ng-show="applyForm.email.$dirty && applyForm.email.$error.required">Required Email</small>
+        <small class="form-error" ng-show="applyForm.email.$dirty && applyForm.email.$error.email">Invalid Email</small>
+        <input type="email" class="form-control" name="email" ng-model="apply.email" required>
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label class="full-width">
+        Message
+        <textarea class="form-control" rows="5" name="message" ng-model="apply.message"></textarea>
+      </label>
+    </div>
+
+    <input type="submit" class="btn btn-success" ng-disabled="applyForm.$invalid" value="Envoyer">
+  </form>
+
+
+
+</div>

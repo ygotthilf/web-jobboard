@@ -17,7 +17,7 @@ function isValidId (req, res){
 
 exports.index =  function (req, res){
 
-  Job.find ().select('title created').limit(20).exec(function (err, jobs){
+  Job.find ().select('title created start location').limit(20).exec(function (err, jobs){
 
     if(err) return res.json(500, err);
 

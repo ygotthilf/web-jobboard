@@ -1,0 +1,44 @@
+/* Color */
+
+@brand-primary: #03a9f4;
+@brand-accent: #9c27b0;
+@brand-success: #9c27b0;
+
+
+/* NavBar */
+
+@navbar-default-color: @brand-primary;
+@navbar-default-bg: @brand-primary;
+@navbar-default-color: white;
+@navbar-default-link-color: white;
+@navbar-border-radius: 0;
+@navbar-default-link-hover-color: darken(@navbar-default-color, 10%);
+@navbar-default-link-active-color: @brand-primary;
+@navbar-default-link-active-bg: white;
+
+/*
+* Font family
+*/
+
+@font-family-roboto-thin: 		roboto-thin;
+@font-family-roboto-regular: 	roboto-regular;
+@font-family-roboto-medium: 	roboto-medium;
+@font-family-roboto-light:	 	roboto-light;
+@font-family-base:        		@font-family-roboto-light;
+@font-family-accent:			@font-family-roboto-regular;
+@font-family-thin:				@font-family-roboto-thin;
+
+/*
+* Font size
+*/
+
+@font-size-base:          16px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1: 	floor((@font-size-base * 2.6));
+@font-size-h2: 	floor((@font-size-base * 2.15));
+@font-size-h3: 	ceil((@font-size-base * 1.7));
+@font-size-h4: 	ceil((@font-size-base * 1.25));
+@font-size-h5: 	@font-size-base;
+@font-size-h6: 	ceil((@font-size-base * 0.85));
