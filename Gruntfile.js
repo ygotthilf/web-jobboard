@@ -60,14 +60,15 @@ module.exports = function (grunt) {
         tasks: ['newer:jshint:all', 'karma']
       },
       script: {
-        files: [ 
+        files: [
           '<%=  project.client %>/app/**/*.js',
         ],
         tasks: ['newer:jshint:all', 'concat:scripts']
       },
       less: {
         files: [
-          '<%= project.client %>/app/**/*.less'],
+          '<%= project.client %>/app/**/*.less',
+          '<%= project.client %>/assets/styles/**/*.less'],
         tasks: ['less', 'autoprefixer']
       },
       gruntfile: {
@@ -75,8 +76,8 @@ module.exports = function (grunt) {
       },
       livereload: {
         files: [
-          '{<%= project.tmp %>,<%= project.client %>}/app/**/*.css',
-          '{<%= project.tmp %>,<%= project.client %>}/app/**/*.html',
+          '<%= project.tmp %>/app/**/*.css',
+          '<%= project.client %>/**/*.html',
           '<%= project.tmp %>/app/**/*.js',
           '!{<%= project.tmp %>,<%= project.client %>}app/**/*.spec.js',
           '!{<%= project.tmp %>,<%= project.client %>}/app/**/*.mock.js',
@@ -102,13 +103,12 @@ module.exports = function (grunt) {
       scripts : {
 
         options : {
-          banner : '\'use strict\';\n\n',
           process : function (src, filepath){
-            return '/* '+filepath+' */\n(function(){\n\n'+src+'\n\n})();';
+            return '/* '+filepath+' */\n(function(){\n\'use strict\';\n\n'+src+'\n\n})();';
           }
         },
         src: [
-          '<%=  project.client %>/app/app.js', 
+          '<%=  project.client %>/app/app.js',
           '<%=  project.client %>/app/**/*.js',
           '!{<%= project.tmp %>,<%= project.client %>}/app/**/*.spec.js',
           '!{<%= project.tmp %>,<%= project.client %>}/app/**/*.mock.js',
