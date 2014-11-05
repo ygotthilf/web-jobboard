@@ -91,7 +91,7 @@ module.exports = function (grunt) {
         files: [
           '<%= project.server %>/**/*.{js,json}'
         ],
-        tasks: ['express:dev', 'wait'],
+        tasks: ['jshint:server','express:dev', 'wait'],
         options: {
           livereload: true,
           nospawn: true //Without this option specified express won't be reloaded
@@ -103,8 +103,9 @@ module.exports = function (grunt) {
       scripts : {
 
         options : {
+          banner : '\'use strict\';\n\n',
           process : function (src, filepath){
-            return '/* '+filepath+' */\n(function(){\n\'use strict\';\n\n'+src+'\n\n})();';
+            return '/* '+filepath+' */\n(function(){\n\n'+src+'\n\n})();';
           }
         },
         src: [
@@ -121,7 +122,8 @@ module.exports = function (grunt) {
     jshint: {
       options: {
         jshintrc: '<%= project.client %>/.jshintrc',
-        reporter: require('jshint-stylish')
+        reporter: require('jshint-stylish'),
+        force : true
       },
       server: {
         options: {
@@ -255,9 +257,9 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= project.tmp %>',
+          cwd: '<%= project.tmp %>/concat',
           src: '*/**.js',
-          dest: '<%= project.tmp %>'
+          dest: '<%= project.tmp %>/concat'
         }]
       }
     },
@@ -482,7 +484,7 @@ module.exports = function (grunt) {
     'useminPrepare',
     'autoprefixer',
     'ngtemplates',
-    'concat',
+    'concat:generated',
     'ngAnnotate',
     'copy:dist',
     'cssmin',
