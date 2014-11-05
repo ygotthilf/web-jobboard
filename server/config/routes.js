@@ -26,7 +26,7 @@ module.exports = function (app){
   }));
 
   app.get('/sample', function (req, res){
-    res.json("This is a sample");
+    res.json('This is a sample');
   });
 
   app.use('/api/jobs', require('../api/job'));
