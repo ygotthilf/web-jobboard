@@ -3,8 +3,8 @@ Web Jobboard
 
 Jobboard application example on MEAN Stack for course
 
-Kickoff
--------
+Getting started
+---------------
 
 1. Install [Node.js](http://nodejs.org/download/)
 2. Install [Git](http://git-scm.com/downloads) 
@@ -19,6 +19,6 @@ Kickoff
 On the way
 ----------
 
-See kickoff
+See Getting started
 
 5. git clone -b live https://github.com/ygotthilf/web-jobboard.git
