@@ -1,0 +1,50 @@
+{
+  "jobs":[
+      {
+         "_id":"54747e1803920734291d6088",
+         "start":"Asap",
+         "price":"330 euros ht/jour",
+         "duration":"24 mois",
+         "location":"Aix en provence",
+         "created":"2014-11-04T13:02:09.220Z",
+         "publisher":"INFOTEL",
+         "description":"Depuis sa création en 1979, Infotel, SSII et Éditeur de logiciels, est devenu un partenaire de référence pour les plus grands comptes (Banque, Assurance, Industrie, Service, Distribution, ...) grâce à son expertise en informatique de gestion, depuis les applications mobiles jusqu’aux bases de données. Aujourd’hui, plus de 1 600 collaborateurs composent le groupe Infotel et nos logiciels sont vendus dans le monde entier.\n\nLe groupe est resté fidèle aux valeurs humaines qui ont fait sa réussite :\n- un recrutement sélectif basé sur les compétences ;\n- un suivi rigoureux des collaborateurs par des commerciaux-managers ;\n- une gestion dynamique de la progression de carrière grâce à des missions valorisantes\n\nNous recherchons pour l’un de nos Clients un Ingénieur de Développement HTML5, Javascript, CSS3\n\nVotre mission :\nAu sein d’une équipe vous participerez, sous la responsabilité d’un chef de projet, à la réalisation de projets de développement. Vous interviendrez sur des phases d’analyse, de conception, de développement autour des technologies HTML5, CSS3 et JavaScript.\n\nVotre profil :\nVous possédez une réelle expertise en conception et développement HTML5/CSS3 et Javascript, vous connaissez le Framework Angular JS.",
+         "title":"Ingénieur de Développement Html5, Javascript, CSS3"
+      },
+      {
+         "_id":"54747e5c03920734291d6418",
+         "start":"01.01.2015",
+         "price":"",
+         "duration":"6 mois +",
+         "location":"Paris, ile de france",
+         "created":"2014-10-27T13:02:10.132Z",
+         "publisher":"Emagine",
+         "description":"emagine recherche un  Développeur « expérimenté »  JavaScript  pour le compte d'un client final.\n\nIndispensable : HTML5, CSS 3, JavaScript, Angular.js\nDémarrage : \tDébut Janvier 2015 \nDurée :\t\t6 mois renouvelables (Mission longue)\nLieu : \t\tPairs - IDF  \nTarif : \t\tSELON PROFIL\n\nAu sein du pôle digital du client  vous intégrerez,  sous la responsabilité du chef d’équipe  et directeur technique  une équipe de  développeurs. \n\nVous serez en charge des développements et de la maintenance des nouveaux sites sur les  technologies JavaScript. \n\nNotre client recherche un profil :\n\n-\t imprégné de la culture internet, en veille technique permanente, ayant une expérience significative dans le développement JavaScript. \n-\tQui souhaite participer à l'effort de conception technique, d'architecture et d'industrialisation du développement, \n-\tQui va devoir s’assurer de la qualité des développements, du respect les normes, du respect du processus de travail en équipe (code review, pair programming) et de la qualité des      tests automatisés.\n\nLes compétences suivantes sont indispensables :\n\n-\t5 ans d'expérience minimum en développement Web ;\n-\tParfaite maitrise du développement JavaScript ; \n-\tTechnos utilisées : JavaScript, HTML 5, CSS 3 ; Angular.js ;\n-\tExpérience sur des projets en  RESPONSIVE DESIGN ;\n-\tMaitrise de GIT, MVC et JQUERY ;\n- \tConnaissance du développement PHP5 avec Framework Zend ou Symfony et CMS Drupal  . \n-\tLa connaissance du Framework de développement d'application Web Angular.js constituera un vrai plus.\n\nContact : \n\nSi vous souhaitez répondre à cette offre, merci de me faire suivre votre CV, au format Word à :\nStéphanie JIMENEZ ROSA     - 01.41.92.56.78",
+         "title":"Développeur Expérimenté Frontend Javascript Angular.js (H / F)"
+      },
+      {
+         "_id":"54747e0903920734291d5f9c",
+         "start":"Asap",
+         "price":"500 euros",
+         "duration":"1 an",
+         "location":"Paris (75)",
+         "created":"2014-10-21T12:02:08.984Z",
+         "publisher":"SKALIS",
+         "description":"Pour l’un de nos clients, grande banque parisienne, nous cherchons un architecte technique capable de développer un framework HTML basé sur AngularJS/Bootstrap.\nLa mission aura lieu en 2 temps: \n \tMise en place du framework (fin d’année)\n \tDéploiement du framework sur le SI (2015)\n\nLa mission aura 4 aspects :\n \tDev Framework\n \tDéploiement projet\n \tMarket Watch\n \tSupport\n\nUne excellente connaissance d’Angular JS est nécessaire (minimum 2 ans d’expérience sur la technologie)\nUn fort background technique en objet est un pré-requis. (minimum 7 ans d’expérience)",
+         "title":"Architecte Technique Compétences Angularjs / Bootstrap"
+      },
+      {
+         "_id":"54747df303920734291d5e76",
+         "start":"Asap",
+         "price":"Anegocier",
+         "duration":"Longue durée",
+         "location":"Idf (92)",
+         "created":"2014-10-13T12:02:08.690Z",
+         "publisher":"Smarteo",
+         "description":"Smarteo recherche pour un de ses clients Un Développeur WEB Angular JS HTML5, .Net\t \n \t\t \n \t--Intitulé de la mission : Développeur Web\t \n \t\t \n \t--Dure de la mission: Longue durée (engagement sur une durée de 2 à 3 ans)\t \n \t\t \n \t--Rythme : Full time\t \n \t\t \n \t--Date de début : ASAP\t \n \t\t \n \t--Profil: Confirmé\t \n \t\t \n \t--Langue requise: Anglais opérationnel\t \n \t\t \n \t--Lieu d’exécution de la mission : La Défense\t \n \t\t \n \t\t \n \t\t \n \t--Technologies (obligatoires! )\t \n \t\t \n \t  Angular JS\t \n \t\t \n \t  FrameWork HTML5, .Net (3 à 6 ans d’expérience)\t \n \t\t \n \t  Expertise de DEV en mode hyper agilité : un Tech lead sur les méthodologies et outils à mettre en uvre pour travailler en   continuous delivery  \t \n \t\t \n \t  En plus du développement, nous recherchons une personne impliquée fortement dans la conception, le développement et la réalisation des applications dont elle a la charge.\t \n \t\t \n \t\t \n \t\t \n \t-- Description de la mission\t \n \t\t \n \t  Le consultant participera aux développements d’un portail Web qui a vocation à exposer des données du CRM iC sur divers format (PC, tablette, téléphone).\t \n \t\t \n \t  La stack technique est Web API pour la partie service et un frontal en AngularJS avec du Bootstrapper.\t \n \t\t \n \t  Le projet en est à ses débuts et à très forte visibilité chez le client\t \n \t\t \n \tSi vous êtes disponible et intéressé, merci de me faire parvenir votre CV+TJM",
+         "title":"Un Développeur WEB Angular JS Html5, .NET"
+      }
+   ],
+
+   "applies" : []
+}

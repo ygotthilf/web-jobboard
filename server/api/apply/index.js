@@ -1,10 +1,9 @@
 'use strict';
 
 var express= require('express');
-var controller = require('./apply.controller');
+var controller = require('./apply.controller.local');
 
 var router = express.Router ();
-
 
 router.get('/', controller.index);
 router.post('/', controller.create);

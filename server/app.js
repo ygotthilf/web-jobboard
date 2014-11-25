@@ -2,10 +2,10 @@
 
 var http = require('http');
 var express = require('express');
-var mongoose = require('mongoose');
+//var mongoose = require('mongoose');
 var config = require('./config/environment');
 
-mongoose.connect(config.mongo.url);
+//mongoose.connect(config.mongo.url);
 
 var app = express();
 
