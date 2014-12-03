@@ -7,7 +7,7 @@ function RouteConfig ($routeProvider){
 		templateUrl : 'app/job/job-list.html',
 		controller : 'JobListCtrl'
 	})
-	.when('/jobs/id', {
+	.when('/jobs/:jobId', {
 		templateUrl : 'app/job/job-detail.html',
 		controller : 'JobDetailCtrl'	
 	})
