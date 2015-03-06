@@ -1,27 +1,39 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <base href="/">
     <title></title>
 
     <!-- build:css(.tmp) app/app.css -->
-      <link rel="stylesheet" href="app/app.css">
+    <link rel="stylesheet" href="app/app.css">
     <!-- endbuild -->
-  </head>
-  <body>
+</head>
+
+<body ng-app="app">
+
+    <div ng-controller="JobListCtrl">
+
+      <ul>
+        <li ng-repeat="job in jobs">
+        {{job.title}}</li>
+      </ul>
+
+    </div>
 
     <!-- CONTENT HERE -->
 
     <!-- build:js(client) app/vendor.js -->
-      <script src="bower_components/angular/angular.js"></script>
-      <script src="bower_components/angular-resource/angular-resource.js"></script>
-      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <!-- endbuild -->
 
     <!-- build:js(.tmp) app/app.js -->
-      <script src="app/combined-scripts.js"></script>
+    <script src="app/combined-scripts.js"></script>
     <!-- endbuild -->
-  </body>
+</body>
+
 </html>
