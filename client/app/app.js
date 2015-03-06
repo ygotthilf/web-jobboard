@@ -1,18 +1,28 @@
-angular.module('app', []);
+angular.module('app', ['ngResource', 'ngRoute']);
 
-function JobListController($scope) {
+function RoutesConfig($routeProvider) {
 
-    var jobs = [{
-        title: 'AngularJS developper'
-    }, {
-        title: 'Node.js developper'
-    }, {
-        title: '.NET developper'
-    }, {
-        title: 'PHP developper'
-    }];
-
-    $scope.jobs = jobs;
+    $routeProvider
+        .when('/jobs', {
+            controller: 'JobListCtrl',
+            templateUrl: 'app/job/job-list.html'
+        })
+        .when('/jobs/:id', {
+            controller: 'JobDetailCtrl',
+            templateUrl: 'app/job/job-detail.html',
+            resolve: {
+                job: fetchJob
+            }
+        })
+        .otherwise('/jobs');
 }
 
-angular.module('app').controller('JobListCtrl', JobListController);
+
+function fetchJob(Job, $route) {
+    return Job.get({
+        jobId: $route.current.params.id
+    }).$promise;
+}
+
+
+angular.module('app').config(RoutesConfig);
